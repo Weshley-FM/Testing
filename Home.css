@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(b6b8e2b897cd7a868be5fee7b47f4a55.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 20px;
+    text-align: left;
+    margin-left: -175px;
+}
+.menu{
+    width: 85%;
+    margin-right: -100px;
+    margin-top: 40px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-family: Arial;
+    float: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: orange;
+    text-transform: uppercase;
+}
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:rgb(150, 72, 0);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: orange;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: -50px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:  2px solid rgb(150, 72, 0);
+    background: transparent;
+    color: orange;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
